@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/CSS/index.css">
+    <style>
+      .maps {
+          height: 600px;
+          width: 600px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <nav class="menu-nav">
+      <section class="navbar">
+        <a type="image" href="http://localhost:8080">
+          <img src="CSS/disque_VP.png" alt="logo" width="50px">
+        </a>
+      </section>
+    </nav>
+
+    <div class="maps" style="margin: auto; margin-top: 5%;">
+      <iframe
+        class="iframe"
+        width="600"
+        height="450"
+        loading="lazy"
+        allowfullscreen
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCXZTli2HQUzZrYUgGschrkjgnxqhMLz4Q&q=concert,{{.}}">
+      </iframe>
+    </div>
+  </body>
+</html>
